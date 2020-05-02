@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klassni_rukovodilel'", "Klassni_rukovodilel'.csproj", "{34CEFF00-53FB-421E-8CB1-003A336F3B3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "формы", "формы", "{B77B1FFD-60F7-4B75-BFD8-5EA169B5E606}"
+	ProjectSection(SolutionItems) = preProject
+		Form1.cs = Form1.cs
+		Form1.Designer.cs = Form1.Designer.cs
+		Form1.resx = Form1.resx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34CEFF00-53FB-421E-8CB1-003A336F3B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34CEFF00-53FB-421E-8CB1-003A336F3B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34CEFF00-53FB-421E-8CB1-003A336F3B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34CEFF00-53FB-421E-8CB1-003A336F3B3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AE9BC15-448F-4C69-8432-5CACF4298683}
+	EndGlobalSection
+EndGlobal
