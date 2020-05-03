@@ -44,22 +44,24 @@
             this.students5BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.students5TableAdapter = new Klassni_rukovodilel_.KlassRukDataSetTableAdapters.students5TableAdapter();
             this.students5DataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.klassRukDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idstudentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idschoolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idklassDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namestudentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.birthdayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.polDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phonenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameparentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passerialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pasnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.klassRukDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.students5BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.students5DataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassRukDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // studentsBindingSource
@@ -228,18 +230,18 @@
             this.students5DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.students5DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.students5DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12});
+            this.idstudentDataGridViewTextBoxColumn,
+            this.idschoolDataGridViewTextBoxColumn,
+            this.idklassDataGridViewTextBoxColumn,
+            this.namestudentDataGridViewTextBoxColumn,
+            this.birthdayDataGridViewTextBoxColumn,
+            this.adresDataGridViewTextBoxColumn,
+            this.polDataGridViewTextBoxColumn,
+            this.phonenumberDataGridViewTextBoxColumn,
+            this.nameparentDataGridViewTextBoxColumn,
+            this.passerialDataGridViewTextBoxColumn,
+            this.pasnumberDataGridViewTextBoxColumn,
+            this.positionDataGridViewTextBoxColumn});
             this.students5DataGridView.DataSource = this.students5BindingSource;
             this.students5DataGridView.Location = new System.Drawing.Point(38, 43);
             this.students5DataGridView.Name = "students5DataGridView";
@@ -248,101 +250,106 @@
             this.students5DataGridView.Size = new System.Drawing.Size(1339, 343);
             this.students5DataGridView.TabIndex = 45;
             // 
-            // dataGridViewTextBoxColumn1
+            // klassRukDataSetBindingSource
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_student";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id_student";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 103;
+            this.klassRukDataSetBindingSource.DataSource = this.klassRukDataSet;
+            this.klassRukDataSetBindingSource.Position = 0;
             // 
-            // dataGridViewTextBoxColumn2
+            // idstudentDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "id_school";
-            this.dataGridViewTextBoxColumn2.HeaderText = "id_school";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 97;
+            this.idstudentDataGridViewTextBoxColumn.DataPropertyName = "id_student";
+            this.idstudentDataGridViewTextBoxColumn.HeaderText = "id_student";
+            this.idstudentDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idstudentDataGridViewTextBoxColumn.Name = "idstudentDataGridViewTextBoxColumn";
+            this.idstudentDataGridViewTextBoxColumn.Width = 103;
             // 
-            // dataGridViewTextBoxColumn3
+            // idschoolDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "id_klass";
-            this.dataGridViewTextBoxColumn3.HeaderText = "id_klass";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 88;
+            this.idschoolDataGridViewTextBoxColumn.DataPropertyName = "id_school";
+            this.idschoolDataGridViewTextBoxColumn.HeaderText = "id_school";
+            this.idschoolDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idschoolDataGridViewTextBoxColumn.Name = "idschoolDataGridViewTextBoxColumn";
+            this.idschoolDataGridViewTextBoxColumn.Width = 97;
             // 
-            // dataGridViewTextBoxColumn4
+            // idklassDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "name_student";
-            this.dataGridViewTextBoxColumn4.HeaderText = "name_student";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 127;
+            this.idklassDataGridViewTextBoxColumn.DataPropertyName = "id_klass";
+            this.idklassDataGridViewTextBoxColumn.HeaderText = "id_klass";
+            this.idklassDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idklassDataGridViewTextBoxColumn.Name = "idklassDataGridViewTextBoxColumn";
+            this.idklassDataGridViewTextBoxColumn.Width = 88;
             // 
-            // dataGridViewTextBoxColumn5
+            // namestudentDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "birthday";
-            this.dataGridViewTextBoxColumn5.HeaderText = "birthday";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 88;
+            this.namestudentDataGridViewTextBoxColumn.DataPropertyName = "name_student";
+            this.namestudentDataGridViewTextBoxColumn.HeaderText = "name_student";
+            this.namestudentDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.namestudentDataGridViewTextBoxColumn.Name = "namestudentDataGridViewTextBoxColumn";
+            this.namestudentDataGridViewTextBoxColumn.Width = 127;
             // 
-            // dataGridViewTextBoxColumn6
+            // birthdayDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "adres";
-            this.dataGridViewTextBoxColumn6.HeaderText = "adres";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 73;
+            this.birthdayDataGridViewTextBoxColumn.DataPropertyName = "birthday";
+            this.birthdayDataGridViewTextBoxColumn.HeaderText = "birthday";
+            this.birthdayDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.birthdayDataGridViewTextBoxColumn.Name = "birthdayDataGridViewTextBoxColumn";
+            this.birthdayDataGridViewTextBoxColumn.Width = 88;
             // 
-            // dataGridViewTextBoxColumn7
+            // adresDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "pol";
-            this.dataGridViewTextBoxColumn7.HeaderText = "pol";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 56;
+            this.adresDataGridViewTextBoxColumn.DataPropertyName = "adres";
+            this.adresDataGridViewTextBoxColumn.HeaderText = "adres";
+            this.adresDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.adresDataGridViewTextBoxColumn.Name = "adresDataGridViewTextBoxColumn";
+            this.adresDataGridViewTextBoxColumn.Width = 73;
             // 
-            // dataGridViewTextBoxColumn8
+            // polDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "phone_number";
-            this.dataGridViewTextBoxColumn8.HeaderText = "phone_number";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 133;
+            this.polDataGridViewTextBoxColumn.DataPropertyName = "pol";
+            this.polDataGridViewTextBoxColumn.HeaderText = "pol";
+            this.polDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.polDataGridViewTextBoxColumn.Name = "polDataGridViewTextBoxColumn";
+            this.polDataGridViewTextBoxColumn.Width = 56;
             // 
-            // dataGridViewTextBoxColumn9
+            // phonenumberDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "name_parent";
-            this.dataGridViewTextBoxColumn9.HeaderText = "name_parent";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 121;
+            this.phonenumberDataGridViewTextBoxColumn.DataPropertyName = "phone_number";
+            this.phonenumberDataGridViewTextBoxColumn.HeaderText = "phone_number";
+            this.phonenumberDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.phonenumberDataGridViewTextBoxColumn.Name = "phonenumberDataGridViewTextBoxColumn";
+            this.phonenumberDataGridViewTextBoxColumn.Width = 133;
             // 
-            // dataGridViewTextBoxColumn10
+            // nameparentDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "pas_serial";
-            this.dataGridViewTextBoxColumn10.HeaderText = "pas_serial";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 102;
+            this.nameparentDataGridViewTextBoxColumn.DataPropertyName = "name_parent";
+            this.nameparentDataGridViewTextBoxColumn.HeaderText = "name_parent";
+            this.nameparentDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nameparentDataGridViewTextBoxColumn.Name = "nameparentDataGridViewTextBoxColumn";
+            this.nameparentDataGridViewTextBoxColumn.Width = 121;
             // 
-            // dataGridViewTextBoxColumn11
+            // passerialDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "pas_number";
-            this.dataGridViewTextBoxColumn11.HeaderText = "pas_number";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 116;
+            this.passerialDataGridViewTextBoxColumn.DataPropertyName = "pas_serial";
+            this.passerialDataGridViewTextBoxColumn.HeaderText = "pas_serial";
+            this.passerialDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.passerialDataGridViewTextBoxColumn.Name = "passerialDataGridViewTextBoxColumn";
+            this.passerialDataGridViewTextBoxColumn.Width = 102;
             // 
-            // dataGridViewTextBoxColumn12
+            // pasnumberDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "position";
-            this.dataGridViewTextBoxColumn12.HeaderText = "position";
-            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Width = 86;
+            this.pasnumberDataGridViewTextBoxColumn.DataPropertyName = "pas_number";
+            this.pasnumberDataGridViewTextBoxColumn.HeaderText = "pas_number";
+            this.pasnumberDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.pasnumberDataGridViewTextBoxColumn.Name = "pasnumberDataGridViewTextBoxColumn";
+            this.pasnumberDataGridViewTextBoxColumn.Width = 116;
+            // 
+            // positionDataGridViewTextBoxColumn
+            // 
+            this.positionDataGridViewTextBoxColumn.DataPropertyName = "position";
+            this.positionDataGridViewTextBoxColumn.HeaderText = "position";
+            this.positionDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
+            this.positionDataGridViewTextBoxColumn.Width = 86;
             // 
             // FormStudent
             // 
@@ -365,6 +372,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.klassRukDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.students5BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.students5DataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassRukDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,17 +395,18 @@
         private System.Windows.Forms.BindingSource students5BindingSource;
         private KlassRukDataSetTableAdapters.students5TableAdapter students5TableAdapter;
         private System.Windows.Forms.DataGridView students5DataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.BindingSource klassRukDataSetBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idstudentDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idschoolDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idklassDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn namestudentDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn birthdayDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adresDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn polDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phonenumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameparentDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn passerialDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pasnumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn positionDataGridViewTextBoxColumn;
     }
 }

@@ -16,5 +16,41 @@ namespace Klassni_rukovodilel_.parent
         {
             InitializeComponent();
         }
+
+        private void roditeli6BindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.roditeli6BindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.klassRukDataSet);
+
+        }
+
+        private void FormRoditeli6_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassRukDataSet.roditeli6". При необходимости она может быть перемещена или удалена.
+            this.roditeli6TableAdapter.Fill(this.klassRukDataSet.roditeli6);
+
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            roditeli6TableAdapter.Update(klassRukDataSet);
+            MessageBox.Show("Изменения сохранены в базе данных");
+        }
+
+        private void buttonDellete_Click(object sender, EventArgs e)
+        {
+            roditeli6DataGridView.Rows.RemoveAt(roditeli6DataGridView.CurrentCell.RowIndex);
+            MessageBox.Show("Запись удалена из базы данных");
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Form me = new FormMenu();
+            me.Left = this.Left;
+            me.Top = this.Top;
+            me.Show();
+            this.Hide();
+        }
     }
 }

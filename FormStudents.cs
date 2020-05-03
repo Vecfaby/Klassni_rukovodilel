@@ -232,5 +232,86 @@ namespace Klassni_rukovodilel_
             s5.Show();
             this.Hide();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            FormStudent6 s6 = new FormStudent6();
+            s6.Left = this.Left;
+            s6.Top = this.Top;
+            s6.Show();
+            this.Hide();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            FormStudent7 s7 = new FormStudent7();
+            s7.Left = this.Left;
+            s7.Top = this.Top;
+            s7.Show();
+            this.Hide();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            FormStudent8 s8 = new FormStudent8();
+            s8.Left = this.Left;
+            s8.Top = this.Top;
+            s8.Show();
+            this.Hide();
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            FormStudent9 s9 = new FormStudent9();
+            s9.Left = this.Left;
+            s9.Top = this.Top;
+            s9.Show();
+            this.Hide();
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            Form me = new FormMenu();
+            me.Left = this.Left;
+            me.Top = this.Top;
+            me.Show();
+            this.Hide();
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            Form me = new FormMenu();
+            me.Left = this.Left;
+            me.Top = this.Top;
+            me.Show();
+            this.Hide();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            Form me = new FormMenu();
+            me.Left = this.Left;
+            me.Top = this.Top;
+            me.Show();
+            this.Hide();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Form me = new FormMenu();
+            me.Left = this.Left;
+            me.Top = this.Top;
+            me.Show();
+            this.Hide();
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Form me = new FormMenu();
+            me.Left = this.Left;
+            me.Top = this.Top;
+            me.Show();
+            this.Hide();
+        }
     }
 }

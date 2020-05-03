@@ -50,10 +50,10 @@ namespace Klassni_rukovodilel_
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            Form me = new FormMenu();
-            me.Left = this.Left;
-            me.Top = this.Top;
-            me.Show();
+            FormStudents stud = new FormStudents();
+            stud.Left = this.Left;
+            stud.Top = this.Top;
+            stud.Show();
             this.Hide();
         }
 
@@ -110,10 +110,8 @@ namespace Klassni_rukovodilel_
                 }
             }
             // сохранить приложение  
-            workbook.SaveAs();
-            // Выход из приложения  
-            app.Quit();
-            MessageBox.Show("Данные экспортированы и сохранены в папке Документы ");
+            workbook.SaveAs();      
+            MessageBox.Show("Данные экспортированы");
         }
 
         private void label1_Click(object sender, EventArgs e)

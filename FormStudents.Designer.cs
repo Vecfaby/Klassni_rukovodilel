@@ -249,6 +249,7 @@
             this.buttonBack.TabIndex = 46;
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonPoisk
             // 
@@ -469,6 +470,7 @@
             this.button9.TabIndex = 52;
             this.button9.Text = "Назад";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -480,6 +482,7 @@
             this.button10.TabIndex = 51;
             this.button10.Text = "Редактировать";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // students6DataGridView
             // 
@@ -684,6 +687,7 @@
             this.button15.TabIndex = 52;
             this.button15.Text = "Назад";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button16
             // 
@@ -695,6 +699,7 @@
             this.button16.TabIndex = 51;
             this.button16.Text = "Редактировать";
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // students7DataGridView
             // 
@@ -898,6 +903,7 @@
             this.button21.TabIndex = 52;
             this.button21.Text = "Назад";
             this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 
@@ -909,6 +915,7 @@
             this.button22.TabIndex = 51;
             this.button22.Text = "Редактировать";
             this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // students8DataGridView
             // 
@@ -1112,6 +1119,7 @@
             this.button27.TabIndex = 52;
             this.button27.Text = "Назад";
             this.button27.UseVisualStyleBackColor = false;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // button28
             // 
@@ -1123,6 +1131,7 @@
             this.button28.TabIndex = 51;
             this.button28.Text = "Редактировать";
             this.button28.UseVisualStyleBackColor = false;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
             // students9DataGridView
             // 
