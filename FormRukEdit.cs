@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Data.Odbc;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,72 +11,61 @@ using System.Windows.Forms;
 
 namespace Klassni_rukovodilel_
 {
-    public partial class FormStudent : Form
+    public partial class FormRukEdit : Form
     {
-        public FormStudent()
+        public FormRukEdit()
         {
             InitializeComponent();
         }
 
-        private void studentsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void klass_rukBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.studentsBindingSource.EndEdit();
+            this.klass_rukBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.klassRukDataSet);
 
         }
 
-        private void FormStudent_Load(object sender, EventArgs e)
+        private void FormRukEdit_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassRukDataSet.students5". При необходимости она может быть перемещена или удалена.
-            this.students5TableAdapter.Fill(this.klassRukDataSet.students5);
-
-
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassRukDataSet.Klass_ruk". При необходимости она может быть перемещена или удалена.
+            this.klass_rukTableAdapter.Fill(this.klassRukDataSet.Klass_ruk);
 
             SqlConnection con = new SqlConnection("Data Source='.\\SQLEXPRESS';Integrated Security='true';Initial Catalog='KlassRuk'");
-            SqlCommand cmd = new SqlCommand("SELECT name_student FROM students5", con); 
+            SqlCommand cmd = new SqlCommand("SELECT name_ruk FROM Klass_ruk", con);
             con.Open();
             SqlDataReader reader = cmd.ExecuteReader();
             AutoCompleteStringCollection SCollection = new AutoCompleteStringCollection();
-            while (reader.Read()) 
+            while (reader.Read())
             {
-                SCollection.Add(reader.GetString(0));             
+                SCollection.Add(reader.GetString(0));
             }
             textBoxSearch.AutoCompleteCustomSource = SCollection;
             con.Close();
 
         }
 
-        private void buttonBack_Click(object sender, EventArgs e)
+        private void buttonPoisk_Click(object sender, EventArgs e)
         {
-            Form me = new FormMenu();
-            me.Left = this.Left;
-            me.Top = this.Top;
-            me.Show();
-            this.Hide();
+            klass_rukBindingSource.Filter = "name_ruk = \'" + textBoxSearch.Text + "\'";
+        }
+
+        private void buttonOtobr_Click(object sender, EventArgs e)
+        {
+            klass_rukBindingSource.Filter = null;
+            textBoxSearch.Clear();
         }
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            studentsTableAdapter.Update(klassRukDataSet);
+            klass_rukTableAdapter.Update(klassRukDataSet);
             MessageBox.Show("Изменения сохранены в базе данных");
         }
 
         private void buttonDellete_Click(object sender, EventArgs e)
         {
-            students5DataGridView.Rows.RemoveAt(students5DataGridView.CurrentCell.RowIndex);
+            klass_rukDataGridView.Rows.RemoveAt(klass_rukDataGridView.CurrentCell.RowIndex);
             MessageBox.Show("Запись удалена из базы данных");
-        }
-
-        private void buttonPoisk_Click(object sender, EventArgs e)
-        {
-            studentsBindingSource.Filter = "name_student = \'" + textBoxSearch.Text + "\'";
-        }
-
-        private void buttonOtobr_Click(object sender, EventArgs e)
-        {
-            studentsBindingSource.Filter = null;
-            textBoxSearch.Clear();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -95,35 +83,37 @@ namespace Klassni_rukovodilel_
             worksheet = workbook.Sheets["Лист1"];
             worksheet = workbook.ActiveSheet;
             // меняем имя активного листа  
-            worksheet.Name = "Ученики 5 класса";
+            worksheet.Name = "Классные руководители";
             // сохраняем часть заголовка в Excel  
-            for (int i = 1; i < students5DataGridView.Columns.Count + 1; i++)
+            for (int i = 1; i < klass_rukDataGridView.Columns.Count + 1; i++)
             {
-                worksheet.Cells[1, i] = students5DataGridView.Columns[i - 1].HeaderText;
+                worksheet.Cells[1, i] = klass_rukDataGridView.Columns[i - 1].HeaderText;
             }
             // сохраняем значение каждой строки и столбца в листе Excel  
-            for (int i = 0; i < students5DataGridView.Rows.Count - 1; i++)
+            for (int i = 0; i < klass_rukDataGridView.Rows.Count - 1; i++)
             {
-                for (int j = 0; j < students5DataGridView.Columns.Count; j++)
+                for (int j = 0; j < klass_rukDataGridView.Columns.Count; j++)
                 {
-                    worksheet.Cells[i + 2, j + 1] = students5DataGridView.Rows[i].Cells[j].Value.ToString();
+                    worksheet.Cells[i + 2, j + 1] = klass_rukDataGridView.Rows[i].Cells[j].Value.ToString();
                 }
             }
-            // сохранить приложение  
-            workbook.SaveAs();
+             
+           
             // Выход из приложения  
             app.Quit();
-            MessageBox.Show("Данные экспортированы и сохранены в папке Документы ");
+            MessageBox.Show("Данные экспортированы");
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void buttonBack_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBoxSearch_TextChanged(object sender, EventArgs e)
-        {
-
+            FormSchool ruk = new FormSchool();
+            ruk.Left = this.Left;
+            ruk.Top = this.Top;
+            ruk.Show();
+            this.Hide();
         }
     }
-}
+    }
+
+      
+    

@@ -32,7 +32,8 @@ namespace Klassni_rukovodilel_
             this.klass_rukTableAdapter.Fill(this.klassRukDataSet.Klass_ruk);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassRukDataSet.school". При необходимости она может быть перемещена или удалена.
             this.schoolTableAdapter.Fill(this.klassRukDataSet.school);
-            
+
+           
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
@@ -58,6 +59,15 @@ namespace Klassni_rukovodilel_
             MessageBox.Show("Изменения сохранены в базе данных");
         }
 
-      
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormRukEdit re = new FormRukEdit();
+            re.Left = this.Left;
+            re.Top = this.Top;
+            re.Show();
+            this.Hide();
+        }
+
+
     }
 }

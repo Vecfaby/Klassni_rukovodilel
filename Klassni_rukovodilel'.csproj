@@ -53,11 +53,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="healt\FormHealt5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="healt\FormHealt5.Designer.cs">
+      <DependentUpon>FormHealt5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="healt\FormHealt6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="healt\FormHealt6.Designer.cs">
+      <DependentUpon>FormHealt6.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRukEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRukEdit.Designer.cs">
+      <DependentUpon>FormRukEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSchool.cs">
       <SubType>Form</SubType>
@@ -71,24 +89,207 @@
     <Compile Include="FormStudent.Designer.cs">
       <DependentUpon>FormStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormStudent6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudent6.Designer.cs">
+      <DependentUpon>FormStudent6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudent7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudent7.Designer.cs">
+      <DependentUpon>FormStudent7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudent8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudent8.Designer.cs">
+      <DependentUpon>FormStudent8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudent9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudent9.Designer.cs">
+      <DependentUpon>FormStudent9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudents.Designer.cs">
+      <DependentUpon>FormStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="healt\FormHealt7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="healt\FormHealt7.Designer.cs">
+      <DependentUpon>FormHealt7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="healt\FormHealt8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="healt\FormHealt8.Designer.cs">
+      <DependentUpon>FormHealt8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="healt\FormHealt9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="healt\FormHealt9.Designer.cs">
+      <DependentUpon>FormHealt9.cs</DependentUpon>
+    </Compile>
     <Compile Include="KlassRukDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>KlassRukDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="parent\FormRoditeli5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parent\FormRoditeli5.Designer.cs">
+      <DependentUpon>FormRoditeli5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parent\FormRoditeli6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parent\FormRoditeli6.Designer.cs">
+      <DependentUpon>FormRoditeli6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parent\FormRoditeli7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parent\FormRoditeli7.Designer.cs">
+      <DependentUpon>FormRoditeli7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parent\FormRoditeli8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parent\FormRoditeli8.Designer.cs">
+      <DependentUpon>FormRoditeli8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parent\FormRoditeli9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parent\FormRoditeli9.Designer.cs">
+      <DependentUpon>FormRoditeli9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="posechaemost\FormPosechaemost5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="posechaemost\FormPosechaemost5.Designer.cs">
+      <DependentUpon>FormPosechaemost5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="posechaemost\FormPosechaemost6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="posechaemost\FormPosechaemost6.Designer.cs">
+      <DependentUpon>FormPosechaemost6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="posechaemost\FormPosechaemost7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="posechaemost\FormPosechaemost7.Designer.cs">
+      <DependentUpon>FormPosechaemost7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="posechaemost\FormPosechaemost8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="posechaemost\FormPosechaemost8.Designer.cs">
+      <DependentUpon>FormPosechaemost8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="posechaemost\FormPosechaemost9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="posechaemost\FormPosechaemost9.Designer.cs">
+      <DependentUpon>FormPosechaemost9.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vedomosti\FormVedomost5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vedomosti\FormVedomost5.Designer.cs">
+      <DependentUpon>FormVedomost5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vedomosti\FormVedomost6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vedomosti\FormVedomost6.Designer.cs">
+      <DependentUpon>FormVedomost6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vedomosti\FormVedomost7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vedomosti\FormVedomost7.Designer.cs">
+      <DependentUpon>FormVedomost7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vedomosti\FormVedomost8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vedomosti\FormVedomost8.Designer.cs">
+      <DependentUpon>FormVedomost8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vedomosti\FormVedomost9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vedomosti\FormVedomost9.Designer.cs">
+      <DependentUpon>FormVedomost9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="инструкции\FormEditInst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="инструкции\FormEditInst.Designer.cs">
+      <DependentUpon>FormEditInst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="инструкции\FormZhurnal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="инструкции\FormZhurnal.Designer.cs">
+      <DependentUpon>FormZhurnal.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormRukEdit.resx">
+      <DependentUpon>FormRukEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSchool.resx">
       <DependentUpon>FormSchool.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStudent.resx">
       <DependentUpon>FormStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudent6.resx">
+      <DependentUpon>FormStudent6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudent7.resx">
+      <DependentUpon>FormStudent7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudent8.resx">
+      <DependentUpon>FormStudent8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudent9.resx">
+      <DependentUpon>FormStudent9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudents.resx">
+      <DependentUpon>FormStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parent\FormRoditeli5.resx">
+      <DependentUpon>FormRoditeli5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parent\FormRoditeli6.resx">
+      <DependentUpon>FormRoditeli6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parent\FormRoditeli7.resx">
+      <DependentUpon>FormRoditeli7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parent\FormRoditeli8.resx">
+      <DependentUpon>FormRoditeli8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parent\FormRoditeli9.resx">
+      <DependentUpon>FormRoditeli9.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,6 +300,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="инструкции\FormEditInst.resx">
+      <DependentUpon>FormEditInst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="инструкции\FormZhurnal.resx">
+      <DependentUpon>FormZhurnal.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="KlassRukDataSet.xsc">
       <DependentUpon>KlassRukDataSet.xsd</DependentUpon>
     </None>

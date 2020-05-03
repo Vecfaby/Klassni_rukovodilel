@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Klassni_rukovodilel_.инструкции;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,14 +18,7 @@ namespace Klassni_rukovodilel_
             InitializeComponent();
         }
 
-        private void buttonSch_Click(object sender, EventArgs e)
-        {
-            FormSchool sch = new FormSchool();
-            sch.Left = this.Left;
-            sch.Top = this.Top;
-            sch.Show();
-            this.Hide();
-        }
+       
 
         private void buttonstudent_Click(object sender, EventArgs e)
         {
@@ -32,6 +26,33 @@ namespace Klassni_rukovodilel_
             stu.Left = this.Left;
             stu.Top = this.Top;
             stu.Show();
+            this.Hide();
+        }
+
+        private void buttonRuk_Click(object sender, EventArgs e)
+        {
+            FormSchool ruk = new FormSchool();
+            ruk.Left = this.Left;
+            ruk.Top = this.Top;
+            ruk.Show();
+            this.Hide();
+        }
+
+        private void buttonStud_Click(object sender, EventArgs e)
+        {
+            FormStudents stud = new FormStudents();
+            stud.Left = this.Left;
+            stud.Top = this.Top;
+            stud.Show();
+            this.Hide();
+        }
+
+        private void buttonZhur_Click(object sender, EventArgs e)
+        {
+            FormZhurnal zh = new FormZhurnal();
+            zh.Left = this.Left;
+            zh.Top = this.Top;
+            zh.Show();
             this.Hide();
         }
     }
