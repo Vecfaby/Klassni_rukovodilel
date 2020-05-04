@@ -44,7 +44,6 @@
             this.students5BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.students5TableAdapter = new Klassni_rukovodilel_.KlassRukDataSetTableAdapters.students5TableAdapter();
             this.students5DataGridView = new System.Windows.Forms.DataGridView();
-            this.klassRukDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idstudentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idschoolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idklassDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,6 +56,8 @@
             this.passerialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pasnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.klassRukDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.klassRukDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.students5BindingSource)).BeginInit();
@@ -250,11 +251,6 @@
             this.students5DataGridView.Size = new System.Drawing.Size(1339, 343);
             this.students5DataGridView.TabIndex = 45;
             // 
-            // klassRukDataSetBindingSource
-            // 
-            this.klassRukDataSetBindingSource.DataSource = this.klassRukDataSet;
-            this.klassRukDataSetBindingSource.Position = 0;
-            // 
             // idstudentDataGridViewTextBoxColumn
             // 
             this.idstudentDataGridViewTextBoxColumn.DataPropertyName = "id_student";
@@ -351,6 +347,15 @@
             this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
             this.positionDataGridViewTextBoxColumn.Width = 86;
             // 
+            // klassRukDataSetBindingSource
+            // 
+            this.klassRukDataSetBindingSource.DataSource = this.klassRukDataSet;
+            this.klassRukDataSetBindingSource.Position = 0;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
             // FormStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -408,5 +413,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn passerialDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pasnumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn positionDataGridViewTextBoxColumn;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

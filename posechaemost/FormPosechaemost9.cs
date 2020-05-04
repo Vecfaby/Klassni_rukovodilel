@@ -16,5 +16,41 @@ namespace Klassni_rukovodilel_.posechaemost
         {
             InitializeComponent();
         }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            posechaemost9TableAdapter.Update(klassRukDataSet);
+            MessageBox.Show("Изменения сохранены в базе данных");
+        }
+
+        private void posechaemost9BindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.posechaemost9BindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.klassRukDataSet);
+
+        }
+
+        private void FormPosechaemost9_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassRukDataSet.posechaemost9". При необходимости она может быть перемещена или удалена.
+            this.posechaemost9TableAdapter.Fill(this.klassRukDataSet.posechaemost9);
+
+        }
+
+        private void buttonDellete_Click(object sender, EventArgs e)
+        {
+            posechaemost9DataGridView.Rows.RemoveAt(posechaemost9DataGridView.CurrentCell.RowIndex);
+            MessageBox.Show("Запись удалена из базы данных");
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            FormStudents stud = new FormStudents();
+            stud.Left = this.Left;
+            stud.Top = this.Top;
+            stud.Show();
+            this.Hide();
+        }
     }
 }

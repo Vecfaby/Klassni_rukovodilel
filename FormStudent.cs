@@ -123,5 +123,12 @@ namespace Klassni_rukovodilel_
         {
 
         }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            Bitmap bmp = new Bitmap(students5DataGridView.Size.Width + 10, students5DataGridView.Size.Height + 10);
+            students5DataGridView.DrawToBitmap(bmp, students5DataGridView.Bounds);
+            e.Graphics.DrawImage(bmp, 0, 0);
+        }
     }
 }

@@ -53,6 +53,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReg.Designer.cs">
+      <DependentUpon>FormReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVneurochnaya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVneurochnaya.Designer.cs">
+      <DependentUpon>FormVneurochnaya.cs</DependentUpon>
+    </Compile>
     <Compile Include="healt\FormHealt5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +264,9 @@
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormReg.resx">
+      <DependentUpon>FormReg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRukEdit.resx">
       <DependentUpon>FormRukEdit.cs</DependentUpon>
     </EmbeddedResource>
@@ -276,6 +291,24 @@
     <EmbeddedResource Include="FormStudents.resx">
       <DependentUpon>FormStudents.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormVneurochnaya.resx">
+      <DependentUpon>FormVneurochnaya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="healt\FormHealt5.resx">
+      <DependentUpon>FormHealt5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="healt\FormHealt6.resx">
+      <DependentUpon>FormHealt6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="healt\FormHealt7.resx">
+      <DependentUpon>FormHealt7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="healt\FormHealt8.resx">
+      <DependentUpon>FormHealt8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="healt\FormHealt9.resx">
+      <DependentUpon>FormHealt9.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="parent\FormRoditeli5.resx">
       <DependentUpon>FormRoditeli5.cs</DependentUpon>
     </EmbeddedResource>
@@ -291,6 +324,21 @@
     <EmbeddedResource Include="parent\FormRoditeli9.resx">
       <DependentUpon>FormRoditeli9.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="posechaemost\FormPosechaemost5.resx">
+      <DependentUpon>FormPosechaemost5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="posechaemost\FormPosechaemost6.resx">
+      <DependentUpon>FormPosechaemost6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="posechaemost\FormPosechaemost7.resx">
+      <DependentUpon>FormPosechaemost7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="posechaemost\FormPosechaemost8.resx">
+      <DependentUpon>FormPosechaemost8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="posechaemost\FormPosechaemost9.resx">
+      <DependentUpon>FormPosechaemost9.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -300,6 +348,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="vedomosti\FormVedomost5.resx">
+      <DependentUpon>FormVedomost5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vedomosti\FormVedomost6.resx">
+      <DependentUpon>FormVedomost6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vedomosti\FormVedomost7.resx">
+      <DependentUpon>FormVedomost7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vedomosti\FormVedomost8.resx">
+      <DependentUpon>FormVedomost8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vedomosti\FormVedomost9.resx">
+      <DependentUpon>FormVedomost9.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="инструкции\FormEditInst.resx">
       <DependentUpon>FormEditInst.cs</DependentUpon>
     </EmbeddedResource>
@@ -350,8 +413,6 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Microsoft\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

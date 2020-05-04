@@ -16,5 +16,41 @@ namespace Klassni_rukovodilel_.vedomosti
         {
             InitializeComponent();
         }
+
+        private void svodnaya_vedomost5kBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.svodnaya_vedomost5kBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.klassRukDataSet);
+
+        }
+
+        private void FormVedomost5_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassRukDataSet.svodnaya_vedomost5k". При необходимости она может быть перемещена или удалена.
+            this.svodnaya_vedomost5kTableAdapter.Fill(this.klassRukDataSet.svodnaya_vedomost5k);
+
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            svodnaya_vedomost5kTableAdapter.Update(klassRukDataSet);
+            MessageBox.Show("Изменения сохранены в базе данных");
+        }
+
+        private void buttonDellete_Click(object sender, EventArgs e)
+        {
+            svodnaya_vedomost5kDataGridView.Rows.RemoveAt(svodnaya_vedomost5kDataGridView.CurrentCell.RowIndex);
+            MessageBox.Show("Запись удалена из базы данных");
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            FormStudents stud = new FormStudents();
+            stud.Left = this.Left;
+            stud.Top = this.Top;
+            stud.Show();
+            this.Hide();
+        }
     }
 }

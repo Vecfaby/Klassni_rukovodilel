@@ -38,13 +38,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.buttonReg = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonExit
             // 
             this.buttonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonExit.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonExit.Location = new System.Drawing.Point(418, 330);
+            this.buttonExit.Location = new System.Drawing.Point(662, 430);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(187, 58);
             this.buttonExit.TabIndex = 16;
@@ -127,11 +128,24 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // buttonReg
+            // 
+            this.buttonReg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonReg.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonReg.Location = new System.Drawing.Point(406, 330);
+            this.buttonReg.Name = "buttonReg";
+            this.buttonReg.Size = new System.Drawing.Size(187, 58);
+            this.buttonReg.TabIndex = 17;
+            this.buttonReg.Text = "Регистрация";
+            this.buttonReg.UseVisualStyleBackColor = false;
+            this.buttonReg.Click += new System.EventHandler(this.buttonReg_Click);
+            // 
             // FormAuto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(861, 500);
+            this.Controls.Add(this.buttonReg);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonEnter);
             this.Controls.Add(this.textBoxPassword);
@@ -159,6 +173,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button buttonReg;
     }
 }
 

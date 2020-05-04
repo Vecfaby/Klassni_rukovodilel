@@ -145,17 +145,18 @@
             // instruktionDataGridView
             // 
             this.instruktionDataGridView.AutoGenerateColumns = false;
+            this.instruktionDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.instruktionDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.instruktionDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.instruktionDataGridView.DataSource = this.instruktionBindingSource;
-            this.instruktionDataGridView.Location = new System.Drawing.Point(197, 39);
+            this.instruktionDataGridView.Location = new System.Drawing.Point(109, 33);
             this.instruktionDataGridView.Name = "instruktionDataGridView";
             this.instruktionDataGridView.RowHeadersWidth = 51;
             this.instruktionDataGridView.RowTemplate.Height = 24;
-            this.instruktionDataGridView.Size = new System.Drawing.Size(454, 337);
+            this.instruktionDataGridView.Size = new System.Drawing.Size(542, 337);
             this.instruktionDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn2
@@ -164,7 +165,7 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "id_instruk";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
+            this.dataGridViewTextBoxColumn2.Width = 98;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -172,7 +173,7 @@
             this.dataGridViewTextBoxColumn3.HeaderText = "number_instruk";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 125;
+            this.dataGridViewTextBoxColumn3.Width = 135;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -180,11 +181,12 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "name_instruk";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 125;
+            this.dataGridViewTextBoxColumn4.Width = 122;
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idinstrukDataGridViewTextBoxColumn,
@@ -204,7 +206,7 @@
             this.idinstrukDataGridViewTextBoxColumn.HeaderText = "id_instruk";
             this.idinstrukDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idinstrukDataGridViewTextBoxColumn.Name = "idinstrukDataGridViewTextBoxColumn";
-            this.idinstrukDataGridViewTextBoxColumn.Width = 125;
+            this.idinstrukDataGridViewTextBoxColumn.Width = 98;
             // 
             // dateinstrukDataGridViewTextBoxColumn
             // 
@@ -212,7 +214,7 @@
             this.dateinstrukDataGridViewTextBoxColumn.HeaderText = "date_instruk";
             this.dateinstrukDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.dateinstrukDataGridViewTextBoxColumn.Name = "dateinstrukDataGridViewTextBoxColumn";
-            this.dateinstrukDataGridViewTextBoxColumn.Width = 125;
+            this.dateinstrukDataGridViewTextBoxColumn.Width = 115;
             // 
             // idklassDataGridViewTextBoxColumn
             // 
@@ -220,7 +222,7 @@
             this.idklassDataGridViewTextBoxColumn.HeaderText = "id_klass";
             this.idklassDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idklassDataGridViewTextBoxColumn.Name = "idklassDataGridViewTextBoxColumn";
-            this.idklassDataGridViewTextBoxColumn.Width = 125;
+            this.idklassDataGridViewTextBoxColumn.Width = 88;
             // 
             // fKzhurnalTBInstruktionBindingSource3
             // 

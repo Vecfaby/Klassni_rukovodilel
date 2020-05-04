@@ -46,10 +46,10 @@ namespace Klassni_rukovodilel_.parent
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            Form me = new FormMenu();
-            me.Left = this.Left;
-            me.Top = this.Top;
-            me.Show();
+            FormStudents stud = new FormStudents();
+            stud.Left = this.Left;
+            stud.Top = this.Top;
+            stud.Show();
             this.Hide();
         }
     }

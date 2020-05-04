@@ -16,5 +16,41 @@ namespace Klassni_rukovodilel_.healt
         {
             InitializeComponent();
         }
+
+        private void karta_health7BindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.karta_health7BindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.klassRukDataSet);
+
+        }
+
+        private void FormHealt7_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassRukDataSet.karta_health7". При необходимости она может быть перемещена или удалена.
+            this.karta_health7TableAdapter.Fill(this.klassRukDataSet.karta_health7);
+
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            karta_health7TableAdapter.Update(klassRukDataSet);
+            MessageBox.Show("Изменения сохранены в базе данных");
+        }
+
+        private void buttonDellete_Click(object sender, EventArgs e)
+        {
+            karta_health7DataGridView.Rows.RemoveAt(karta_health7DataGridView.CurrentCell.RowIndex);
+            MessageBox.Show("Запись удалена из базы данных");
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            FormStudents stud = new FormStudents();
+            stud.Left = this.Left;
+            stud.Top = this.Top;
+            stud.Show();
+            this.Hide();
+        }
     }
 }
