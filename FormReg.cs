@@ -34,6 +34,19 @@ namespace Klassni_rukovodilel_
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassRukDataSet.Users". При необходимости она может быть перемещена или удалена.
             this.usersTableAdapter.Fill(this.klassRukDataSet.Users);
+            this.rukiTableAdapter1.Fill(this.klassRukDataSet.ruki);
+
+            SqlConnection con = new SqlConnection("Data Source='.\\SQLEXPRESS';Integrated Security='true';Initial Catalog='KlassRuk'");
+            SqlCommand cmd = new SqlCommand("SELECT ruk FROM ruki", con);
+            con.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            AutoCompleteStringCollection SCollection = new AutoCompleteStringCollection();
+            while (reader.Read())
+            {
+                SCollection.Add(reader.GetString(0));
+            }
+            roleTextBox.AutoCompleteCustomSource = SCollection;
+            con.Close();
 
         }
 

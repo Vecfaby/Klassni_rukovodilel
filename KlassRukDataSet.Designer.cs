@@ -100,6 +100,8 @@ namespace Klassni_rukovodilel_ {
         
         private roditeli9DataTable tableroditeli9;
         
+        private rukiDataTable tableruki;
+        
         private global::System.Data.DataRelation relationFK_karta_health_students;
         
         private global::System.Data.DataRelation relationFK_Klass_ruk_school1;
@@ -359,6 +361,9 @@ namespace Klassni_rukovodilel_ {
                 }
                 if ((ds.Tables["roditeli9"] != null)) {
                     base.Tables.Add(new roditeli9DataTable(ds.Tables["roditeli9"]));
+                }
+                if ((ds.Tables["ruki"] != null)) {
+                    base.Tables.Add(new rukiDataTable(ds.Tables["ruki"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -760,6 +765,16 @@ namespace Klassni_rukovodilel_ {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public rukiDataTable ruki {
+            get {
+                return this.tableruki;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -938,6 +953,9 @@ namespace Klassni_rukovodilel_ {
                 }
                 if ((ds.Tables["roditeli9"] != null)) {
                     base.Tables.Add(new roditeli9DataTable(ds.Tables["roditeli9"]));
+                }
+                if ((ds.Tables["ruki"] != null)) {
+                    base.Tables.Add(new rukiDataTable(ds.Tables["ruki"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -1200,6 +1218,12 @@ namespace Klassni_rukovodilel_ {
                     this.tableroditeli9.InitVars();
                 }
             }
+            this.tableruki = ((rukiDataTable)(base.Tables["ruki"]));
+            if ((initTable == true)) {
+                if ((this.tableruki != null)) {
+                    this.tableruki.InitVars();
+                }
+            }
             this.relationFK_karta_health_students = this.Relations["FK_karta_health_students"];
             this.relationFK_Klass_ruk_school1 = this.Relations["FK_Klass_ruk_school1"];
             this._relationFK_posechaemost__students = this.Relations["FK_posechaemost\'_students"];
@@ -1345,6 +1369,8 @@ namespace Klassni_rukovodilel_ {
             base.Tables.Add(this.tableroditeli8);
             this.tableroditeli9 = new roditeli9DataTable();
             base.Tables.Add(this.tableroditeli9);
+            this.tableruki = new rukiDataTable();
+            base.Tables.Add(this.tableruki);
             this.relationFK_karta_health_students = new global::System.Data.DataRelation("FK_karta_health_students", new global::System.Data.DataColumn[] {
                         this.tablestudents.id_studentColumn}, new global::System.Data.DataColumn[] {
                         this.tablekarta_health.id_studentColumn}, false);
@@ -1813,6 +1839,12 @@ namespace Klassni_rukovodilel_ {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializeruki() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
                 this.InitVars();
@@ -1979,6 +2011,9 @@ namespace Klassni_rukovodilel_ {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void roditeli9RowChangeEventHandler(object sender, roditeli9RowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void rukiRowChangeEventHandler(object sender, rukiRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -14926,6 +14961,254 @@ namespace Klassni_rukovodilel_ {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class rukiDataTable : global::System.Data.TypedTableBase<rukiRow> {
+            
+            private global::System.Data.DataColumn columnruk;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public rukiDataTable() {
+                this.TableName = "ruki";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal rukiDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected rukiDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn rukColumn {
+                get {
+                    return this.columnruk;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public rukiRow this[int index] {
+                get {
+                    return ((rukiRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event rukiRowChangeEventHandler rukiRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event rukiRowChangeEventHandler rukiRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event rukiRowChangeEventHandler rukiRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event rukiRowChangeEventHandler rukiRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddrukiRow(rukiRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public rukiRow AddrukiRow(string ruk) {
+                rukiRow rowrukiRow = ((rukiRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        ruk};
+                rowrukiRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowrukiRow);
+                return rowrukiRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                rukiDataTable cln = ((rukiDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new rukiDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnruk = base.Columns["ruk"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnruk = new global::System.Data.DataColumn("ruk", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnruk);
+                this.columnruk.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public rukiRow NewrukiRow() {
+                return ((rukiRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new rukiRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(rukiRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.rukiRowChanged != null)) {
+                    this.rukiRowChanged(this, new rukiRowChangeEvent(((rukiRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.rukiRowChanging != null)) {
+                    this.rukiRowChanging(this, new rukiRowChangeEvent(((rukiRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.rukiRowDeleted != null)) {
+                    this.rukiRowDeleted(this, new rukiRowChangeEvent(((rukiRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.rukiRowDeleting != null)) {
+                    this.rukiRowDeleting(this, new rukiRowChangeEvent(((rukiRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemoverukiRow(rukiRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                KlassRukDataSet ds = new KlassRukDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "rukiDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class InstruktionRow : global::System.Data.DataRow {
@@ -23609,6 +23892,49 @@ namespace Klassni_rukovodilel_ {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class rukiRow : global::System.Data.DataRow {
+            
+            private rukiDataTable tableruki;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal rukiRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableruki = ((rukiDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ruk {
+                get {
+                    try {
+                        return ((string)(this[this.tableruki.rukColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ruk\' в таблице \'ruki\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableruki.rukColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsrukNull() {
+                return this.IsNull(this.tableruki.rukColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetrukNull() {
+                this[this.tableruki.rukColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -24886,6 +25212,40 @@ namespace Klassni_rukovodilel_ {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public roditeli9Row Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class rukiRowChangeEvent : global::System.EventArgs {
+            
+            private rukiRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public rukiRowChangeEvent(rukiRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public rukiRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -38543,6 +38903,234 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
     }
     
     /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class rukiTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public rukiTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "ruki";
+            tableMapping.ColumnMappings.Add("ruk", "ruk");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[ruki] ([ruk]) VALUES (@ruk)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ruk", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ruk", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Klassni_rukovodilel_.Properties.Settings.Default.KlassRukConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT ruk FROM dbo.ruki";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(KlassRukDataSet.rukiDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual KlassRukDataSet.rukiDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            KlassRukDataSet.rukiDataTable dataTable = new KlassRukDataSet.rukiDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(KlassRukDataSet.rukiDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(KlassRukDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "ruki");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(string ruk) {
+            if ((ruk == null)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(ruk));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+    }
+    
+    /// <summary>
     ///TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -38629,6 +39217,8 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         private roditeli8TableAdapter _roditeli8TableAdapter;
         
         private roditeli9TableAdapter _roditeli9TableAdapter;
+        
+        private rukiTableAdapter _rukiTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -39179,6 +39769,20 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public rukiTableAdapter rukiTableAdapter {
+            get {
+                return this._rukiTableAdapter;
+            }
+            set {
+                this._rukiTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public bool BackupDataSetBeforeUpdate {
             get {
                 return this._backupDataSetBeforeUpdate;
@@ -39348,6 +39952,10 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                             && (this._roditeli9TableAdapter.Connection != null))) {
                     return this._roditeli9TableAdapter.Connection;
                 }
+                if (((this._rukiTableAdapter != null) 
+                            && (this._rukiTableAdapter.Connection != null))) {
+                    return this._rukiTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -39475,6 +40083,9 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                 if ((this._roditeli9TableAdapter != null)) {
                     count = (count + 1);
                 }
+                if ((this._rukiTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 return count;
             }
         }
@@ -39549,12 +40160,12 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._students6TableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.students6.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._students5TableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.students5.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._students6TableAdapter.Update(updatedRows));
+                    result = (result + this._students5TableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -39567,12 +40178,12 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._students5TableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.students5.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._students6TableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.students6.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._students5TableAdapter.Update(updatedRows));
+                    result = (result + this._students6TableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -39582,6 +40193,15 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._usersTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._roditeli8TableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.roditeli8.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._roditeli8TableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -39684,21 +40304,21 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._roditeliTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.roditeli.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._roditeliTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             if ((this._karta_health6TableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.karta_health6.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._karta_health6TableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._karta_health5TableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.karta_health5.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._karta_health5TableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -39729,21 +40349,21 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._roditeli9TableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.roditeli9.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._roditeli9TableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             if ((this._predmetTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.predmet.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._predmetTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._roditeli8TableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.roditeli8.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._roditeli8TableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -39810,21 +40430,21 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._roditeliTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.roditeli.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._karta_health5TableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.karta_health5.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._roditeliTableAdapter.Update(updatedRows));
+                    result = (result + this._karta_health5TableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._roditeli9TableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.roditeli9.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._rukiTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.ruki.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._roditeli9TableAdapter.Update(updatedRows));
+                    result = (result + this._rukiTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -39894,11 +40514,11 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._students6TableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.students6.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._students5TableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.students5.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._students6TableAdapter.Update(addedRows));
+                    result = (result + this._students5TableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -39910,11 +40530,11 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._students5TableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.students5.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._students6TableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.students6.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._students5TableAdapter.Update(addedRows));
+                    result = (result + this._students6TableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -39923,6 +40543,14 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._usersTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._roditeli8TableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.roditeli8.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._roditeli8TableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -40014,19 +40642,19 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._roditeliTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.roditeli.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._roditeliTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             if ((this._karta_health6TableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.karta_health6.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._karta_health6TableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._karta_health5TableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.karta_health5.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._karta_health5TableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -40054,19 +40682,19 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._roditeli9TableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.roditeli9.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._roditeli9TableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             if ((this._predmetTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.predmet.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._predmetTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._roditeli8TableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.roditeli8.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._roditeli8TableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -40126,19 +40754,19 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._roditeliTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.roditeli.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._karta_health5TableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.karta_health5.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._roditeliTableAdapter.Update(addedRows));
+                    result = (result + this._karta_health5TableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._roditeli9TableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.roditeli9.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._rukiTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.ruki.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._roditeli9TableAdapter.Update(addedRows));
+                    result = (result + this._rukiTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -40152,19 +40780,19 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateDeletedRows(KlassRukDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._roditeli9TableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.roditeli9.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._rukiTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.ruki.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._roditeli9TableAdapter.Update(deletedRows));
+                    result = (result + this._rukiTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._roditeliTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.roditeli.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._karta_health5TableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.karta_health5.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._roditeliTableAdapter.Update(deletedRows));
+                    result = (result + this._karta_health5TableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -40224,19 +40852,19 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._roditeli8TableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.roditeli8.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._roditeli8TableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._predmetTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.predmet.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._predmetTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._roditeli9TableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.roditeli9.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._roditeli9TableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -40264,19 +40892,19 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._karta_health5TableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.karta_health5.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._karta_health5TableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._karta_health6TableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.karta_health6.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._karta_health6TableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._roditeliTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.roditeli.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._roditeliTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -40368,6 +40996,14 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                     allChangedRows.AddRange(deletedRows);
                 }
             }
+            if ((this._roditeli8TableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.roditeli8.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._roditeli8TableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             if ((this._usersTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Users.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -40376,11 +41012,11 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._students5TableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.students5.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._students6TableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.students6.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._students5TableAdapter.Update(deletedRows));
+                    result = (result + this._students6TableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -40392,11 +41028,11 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._students6TableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.students6.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._students5TableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.students5.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._students6TableAdapter.Update(deletedRows));
+                    result = (result + this._students5TableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -40682,6 +41318,11 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
             }
             if (((this._roditeli9TableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._roditeli9TableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("Все адаптеры таблицы, управляемые диспетчером адаптера таблицы TableAdapterManage" +
+                        "r, должны использовать одинаковую строку подключения.");
+            }
+            if (((this._rukiTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._rukiTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Все адаптеры таблицы, управляемые диспетчером адаптера таблицы TableAdapterManage" +
                         "r, должны использовать одинаковую строку подключения.");
             }
@@ -41059,6 +41700,15 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                         adaptersWithAcceptChangesDuringUpdate.Add(this._roditeli9TableAdapter.Adapter);
                     }
                 }
+                if ((this._rukiTableAdapter != null)) {
+                    revertConnections.Add(this._rukiTableAdapter, this._rukiTableAdapter.Connection);
+                    this._rukiTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._rukiTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._rukiTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._rukiTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._rukiTableAdapter.Adapter);
+                    }
+                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -41268,6 +41918,10 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                 if ((this._roditeli9TableAdapter != null)) {
                     this._roditeli9TableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._roditeli9TableAdapter]));
                     this._roditeli9TableAdapter.Transaction = null;
+                }
+                if ((this._rukiTableAdapter != null)) {
+                    this._rukiTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._rukiTableAdapter]));
+                    this._rukiTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

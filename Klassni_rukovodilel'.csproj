@@ -65,6 +65,12 @@
     <Compile Include="FormVneurochnaya.Designer.cs">
       <DependentUpon>FormVneurochnaya.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formzapisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formzapisi.Designer.cs">
+      <DependentUpon>Formzapisi.cs</DependentUpon>
+    </Compile>
     <Compile Include="healt\FormHealt5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +190,7 @@
     <Compile Include="klass\FormKlas9.Designer.cs">
       <DependentUpon>FormKlas9.cs</DependentUpon>
     </Compile>
+    <Compile Include="klass\FormStudents7.cs" />
     <Compile Include="parent\FormRoditeli5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -323,6 +330,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormVneurochnaya.resx">
       <DependentUpon>FormVneurochnaya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formzapisi.resx">
+      <DependentUpon>Formzapisi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="healt\FormHealt5.resx">
       <DependentUpon>FormHealt5.cs</DependentUpon>

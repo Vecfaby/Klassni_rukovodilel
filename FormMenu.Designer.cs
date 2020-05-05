@@ -32,6 +32,8 @@
             this.buttonStud = new System.Windows.Forms.Button();
             this.buttonVneur = new System.Windows.Forms.Button();
             this.buttonZhur = new System.Windows.Forms.Button();
+            this.buttonzapisi = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonRuk
@@ -62,7 +64,7 @@
             // 
             this.buttonVneur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonVneur.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonVneur.Location = new System.Drawing.Point(419, 265);
+            this.buttonVneur.Location = new System.Drawing.Point(419, 223);
             this.buttonVneur.Name = "buttonVneur";
             this.buttonVneur.Size = new System.Drawing.Size(187, 73);
             this.buttonVneur.TabIndex = 24;
@@ -74,7 +76,7 @@
             // 
             this.buttonZhur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonZhur.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonZhur.Location = new System.Drawing.Point(140, 265);
+            this.buttonZhur.Location = new System.Drawing.Point(140, 223);
             this.buttonZhur.Name = "buttonZhur";
             this.buttonZhur.Size = new System.Drawing.Size(187, 73);
             this.buttonZhur.TabIndex = 25;
@@ -82,11 +84,37 @@
             this.buttonZhur.UseVisualStyleBackColor = false;
             this.buttonZhur.Click += new System.EventHandler(this.buttonZhur_Click);
             // 
+            // buttonzapisi
+            // 
+            this.buttonzapisi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonzapisi.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonzapisi.Location = new System.Drawing.Point(140, 356);
+            this.buttonzapisi.Name = "buttonzapisi";
+            this.buttonzapisi.Size = new System.Drawing.Size(187, 73);
+            this.buttonzapisi.TabIndex = 26;
+            this.buttonzapisi.Text = "Учетные записи";
+            this.buttonzapisi.UseVisualStyleBackColor = false;
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonExit.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonExit.Location = new System.Drawing.Point(419, 356);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(187, 73);
+            this.buttonExit.TabIndex = 27;
+            this.buttonExit.Text = "Выход";
+            this.buttonExit.UseCompatibleTextRendering = true;
+            this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonExit);
+            this.Controls.Add(this.buttonzapisi);
             this.Controls.Add(this.buttonZhur);
             this.Controls.Add(this.buttonVneur);
             this.Controls.Add(this.buttonStud);
@@ -103,5 +131,7 @@
         private System.Windows.Forms.Button buttonStud;
         private System.Windows.Forms.Button buttonVneur;
         private System.Windows.Forms.Button buttonZhur;
+        private System.Windows.Forms.Button buttonzapisi;
+        private System.Windows.Forms.Button buttonExit;
     }
 }

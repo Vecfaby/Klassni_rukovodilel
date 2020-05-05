@@ -64,5 +64,10 @@ namespace Klassni_rukovodilel_
             vn.Show();
             this.Hide();
         }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

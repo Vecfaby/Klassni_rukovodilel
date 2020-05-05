@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Klassni_rukovodilel_.klass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,10 +47,10 @@ namespace Klassni_rukovodilel_.parent
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            FormStudents stud = new FormStudents();
-            stud.Left = this.Left;
-            stud.Top = this.Top;
-            stud.Show();
+            FormKlas6 k6 = new FormKlas6();
+            k6.Left = this.Left;
+            k6.Top = this.Top;
+            k6.Show();
             this.Hide();
         }
     }

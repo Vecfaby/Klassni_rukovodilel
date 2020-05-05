@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Klassni_rukovodilel_.klass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,11 @@ namespace Klassni_rukovodilel_
             reg.Top = this.Top;
             reg.Show();
             this.Hide();
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void FormAuto_Load(object sender, EventArgs e)
@@ -126,48 +132,48 @@ namespace Klassni_rukovodilel_
                 {
                     if (table1.Rows.Count > 0)
                     {
-                        FormStudents stud = new FormStudents();
-                        stud.Left = this.Left;
-                        stud.Top = this.Top;
-                        stud.Show();
+                        FormKlas5 k5 = new FormKlas5();
+                        k5.Left = this.Left;
+                        k5.Top = this.Top;
+                        k5.Show();
                         this.Hide();
                     }
                     if (table2.Rows.Count > 0)
                     {
-                        Form me = new FormMenu();
-                        me.Left = this.Left;
-                        me.Top = this.Top;
-                        me.Show();
+                        FormKlas6 k6 = new FormKlas6();
+                        k6.Left = this.Left;
+                        k6.Top = this.Top;
+                        k6.Show();
                         this.Hide();
                     }
                     else
                     {
                         if (table3.Rows.Count > 0)
                         {
-                            Form me = new FormMenu();
-                            me.Left = this.Left;
-                            me.Top = this.Top;
-                            me.Show();
+                            FormKlas7 k7 = new FormKlas7();
+                            k7.Left = this.Left;
+                            k7.Top = this.Top;
+                            k7.Show();
                             this.Hide();
                         }
                         else
                         {
                             if (table4.Rows.Count > 0)
                             {
-                                Form me = new FormMenu();
-                                me.Left = this.Left;
-                                me.Top = this.Top;
-                                me.Show();
+                                FormKlas8 k8 = new FormKlas8();
+                                k8.Left = this.Left;
+                                k8.Top = this.Top;
+                                k8.Show();
                                 this.Hide();
                             }
                             else
                             {
                                 if (table5.Rows.Count > 0)
                                 {
-                                    Form me = new FormMenu();
-                                    me.Left = this.Left;
-                                    me.Top = this.Top;
-                                    me.Show();
+                                    FormKlas9 k9 = new FormKlas9();
+                                    k9.Left = this.Left;
+                                    k9.Top = this.Top;
+                                    k9.Show();
                                     this.Hide();
                                 }
                                 else

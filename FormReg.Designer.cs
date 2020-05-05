@@ -42,6 +42,7 @@
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.loginTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.rukiTableAdapter1 = new Klassni_rukovodilel_.KlassRukDataSetTableAdapters.rukiTableAdapter();
             loginLabel = new System.Windows.Forms.Label();
             passwordLabel = new System.Windows.Forms.Label();
             roleLabel = new System.Windows.Forms.Label();
@@ -118,6 +119,7 @@
             this.tableAdapterManager.roditeli8TableAdapter = null;
             this.tableAdapterManager.roditeli9TableAdapter = null;
             this.tableAdapterManager.roditeliTableAdapter = null;
+            this.tableAdapterManager.rukiTableAdapter = null;
             this.tableAdapterManager.schoolTableAdapter = null;
             this.tableAdapterManager.students5TableAdapter = null;
             this.tableAdapterManager.students6TableAdapter = null;
@@ -162,14 +164,14 @@
             // 
             // roleTextBox
             // 
+            this.roleTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.roleTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.roleTextBox.BackColor = System.Drawing.Color.White;
             this.roleTextBox.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.roleTextBox.Location = new System.Drawing.Point(495, 277);
             this.roleTextBox.Name = "roleTextBox";
-            this.roleTextBox.ReadOnly = true;
             this.roleTextBox.Size = new System.Drawing.Size(166, 35);
             this.roleTextBox.TabIndex = 18;
-            this.roleTextBox.Text = "Учитель";
             this.roleTextBox.TextChanged += new System.EventHandler(this.roleTextBox_TextChanged_1);
             // 
             // passwordTextBox
@@ -199,6 +201,10 @@
             this.button1.Text = "Назад";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // rukiTableAdapter1
+            // 
+            this.rukiTableAdapter1.ClearBeforeFill = true;
             // 
             // FormReg
             // 
@@ -236,5 +242,6 @@
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.TextBox loginTextBox;
         private System.Windows.Forms.Button button1;
+        private KlassRukDataSetTableAdapters.rukiTableAdapter rukiTableAdapter1;
     }
 }
