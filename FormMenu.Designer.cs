@@ -68,6 +68,7 @@
             this.buttonVneur.TabIndex = 24;
             this.buttonVneur.Text = "Внеурочная деятельность";
             this.buttonVneur.UseVisualStyleBackColor = false;
+            this.buttonVneur.Click += new System.EventHandler(this.buttonVneur_Click);
             // 
             // buttonZhur
             // 

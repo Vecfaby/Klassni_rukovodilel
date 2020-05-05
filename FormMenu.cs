@@ -55,5 +55,14 @@ namespace Klassni_rukovodilel_
             zh.Show();
             this.Hide();
         }
+
+        private void buttonVneur_Click(object sender, EventArgs e)
+        {
+            FormVneurochnaya vn = new FormVneurochnaya();
+            vn.Left = this.Left;
+            vn.Top = this.Top;
+            vn.Show();
+            this.Hide();
+        }
     }
 }

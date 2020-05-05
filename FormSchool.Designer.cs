@@ -265,7 +265,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button buttonBack;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idklassrukDataGridViewTextBoxColumn;
+       
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idklassDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn namerukDataGridViewTextBoxColumn;

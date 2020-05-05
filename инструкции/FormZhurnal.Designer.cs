@@ -296,7 +296,7 @@
         private System.Windows.Forms.BindingSource zhurnal_TBBindingSource;
         private KlassRukDataSetTableAdapters.zhurnal_TBTableAdapter zhurnal_TBTableAdapter;
         private KlassRukDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+       
         private KlassRukDataSetTableAdapters.InstruktionTableAdapter instruktionTableAdapter;
         private System.Windows.Forms.BindingSource instruktionBindingSource;
         private System.Windows.Forms.BindingSource fKzhurnalTBInstruktionBindingSource;

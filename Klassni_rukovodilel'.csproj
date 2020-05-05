@@ -154,6 +154,36 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>KlassRukDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="klass\FormKlas5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="klass\FormKlas5.Designer.cs">
+      <DependentUpon>FormKlas5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="klass\FormKlas6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="klass\FormKlas6.Designer.cs">
+      <DependentUpon>FormKlas6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="klass\FormKlas7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="klass\FormKlas7.Designer.cs">
+      <DependentUpon>FormKlas7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="klass\FormKlas8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="klass\FormKlas8.Designer.cs">
+      <DependentUpon>FormKlas8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="klass\FormKlas9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="klass\FormKlas9.Designer.cs">
+      <DependentUpon>FormKlas9.cs</DependentUpon>
+    </Compile>
     <Compile Include="parent\FormRoditeli5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -308,6 +338,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="healt\FormHealt9.resx">
       <DependentUpon>FormHealt9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="klass\FormKlas5.resx">
+      <DependentUpon>FormKlas5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="klass\FormKlas6.resx">
+      <DependentUpon>FormKlas6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="klass\FormKlas7.resx">
+      <DependentUpon>FormKlas7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="klass\FormKlas8.resx">
+      <DependentUpon>FormKlas8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="klass\FormKlas9.resx">
+      <DependentUpon>FormKlas9.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="parent\FormRoditeli5.resx">
       <DependentUpon>FormRoditeli5.cs</DependentUpon>
