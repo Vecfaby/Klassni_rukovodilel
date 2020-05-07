@@ -120,6 +120,7 @@
             this.tableAdapterManager.roditeli8TableAdapter = null;
             this.tableAdapterManager.roditeli9TableAdapter = null;
             this.tableAdapterManager.roditeliTableAdapter = null;
+            this.tableAdapterManager.rukiTableAdapter = null;
             this.tableAdapterManager.schoolTableAdapter = null;
             this.tableAdapterManager.students5TableAdapter = null;
             this.tableAdapterManager.students6TableAdapter = null;
@@ -189,7 +190,7 @@
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonBack);
             this.Name = "FormHealt8";
-            this.Text = "FormHealt8";
+            this.Text = "Карта здоровья 8 класс";
             this.Load += new System.EventHandler(this.FormHealt8_Load);
             ((System.ComponentModel.ISupportInitialize)(this.klassRukDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.karta_health8BindingSource)).EndInit();

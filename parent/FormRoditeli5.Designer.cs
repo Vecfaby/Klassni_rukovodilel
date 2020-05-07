@@ -127,6 +127,7 @@
             this.tableAdapterManager.roditeli8TableAdapter = null;
             this.tableAdapterManager.roditeli9TableAdapter = null;
             this.tableAdapterManager.roditeliTableAdapter = null;
+            this.tableAdapterManager.rukiTableAdapter = null;
             this.tableAdapterManager.schoolTableAdapter = null;
             this.tableAdapterManager.students5TableAdapter = null;
             this.tableAdapterManager.students6TableAdapter = null;
@@ -258,7 +259,7 @@
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonBack);
             this.Name = "FormRoditeli5";
-            this.Text = "FormRoditeli5";
+            this.Text = "Родители учеников 5 класса";
             this.Load += new System.EventHandler(this.FormRoditeli5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.klassRukDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roditeli5BindingSource)).EndInit();

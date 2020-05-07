@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Printing;
 
 namespace Klassni_rukovodilel_
 {
@@ -130,5 +131,32 @@ namespace Klassni_rukovodilel_
             students5DataGridView.DrawToBitmap(bmp, students5DataGridView.Bounds);
             e.Graphics.DrawImage(bmp, 0, 0);
         }
+
+        private void buttonPrint_Click(object sender, EventArgs e)
+        {
+            // объект для печати
+            PrintDocument printDocument1 = new PrintDocument();
+
+            // обработчик события печати
+            printDocument1.PrintPage += PrintPageHandler;
+
+            // диалог настройки печати
+            PrintDialog printDialog = new PrintDialog();
+
+            // установка объекта печати для его настройки
+            printDialog.Document = printDocument1;
+
+            // если в диалоге было нажато ОК
+            if (printDialog.ShowDialog() == DialogResult.OK)
+                printDialog.Document.Print(); // печатаем
+        }
+
+            // обработчик события печати
+            void PrintPageHandler(object sender, PrintPageEventArgs e)
+            {
+                
+               
+            }
+        }
     }
-}
+

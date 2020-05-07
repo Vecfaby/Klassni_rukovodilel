@@ -85,6 +85,7 @@
             this.tableAdapterManager.roditeli8TableAdapter = null;
             this.tableAdapterManager.roditeli9TableAdapter = null;
             this.tableAdapterManager.roditeliTableAdapter = null;
+            this.tableAdapterManager.rukiTableAdapter = null;
             this.tableAdapterManager.schoolTableAdapter = null;
             this.tableAdapterManager.students5TableAdapter = null;
             this.tableAdapterManager.students6TableAdapter = null;
@@ -199,7 +200,7 @@
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.posechaemost5DataGridView);
             this.Name = "FormPosechaemost5";
-            this.Text = "FormPosechaemost5";
+            this.Text = "Посещаемость учеников 5 класса";
             this.Load += new System.EventHandler(this.FormPosechaemost5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.klassRukDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.posechaemost5BindingSource)).EndInit();

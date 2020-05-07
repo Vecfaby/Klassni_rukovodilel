@@ -121,6 +121,7 @@
             this.tableAdapterManager.roditeli8TableAdapter = null;
             this.tableAdapterManager.roditeli9TableAdapter = null;
             this.tableAdapterManager.roditeliTableAdapter = null;
+            this.tableAdapterManager.rukiTableAdapter = null;
             this.tableAdapterManager.schoolTableAdapter = null;
             this.tableAdapterManager.students5TableAdapter = null;
             this.tableAdapterManager.students6TableAdapter = null;
@@ -199,7 +200,7 @@
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonBack);
             this.Name = "FormPosechaemost6";
-            this.Text = "FormPosechaemost6";
+            this.Text = "Посещаемость учеников 6 класса";
             this.Load += new System.EventHandler(this.FormPosechaemost6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.klassRukDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.posechaemost6BindingSource)).EndInit();

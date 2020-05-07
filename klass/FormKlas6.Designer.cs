@@ -147,7 +147,7 @@
             this.pasnumberDataGridViewTextBoxColumn,
             this.positionDataGridViewTextBoxColumn});
             this.students5DataGridView.DataSource = this.students6BindingSource;
-            this.students5DataGridView.Location = new System.Drawing.Point(-29, 12);
+            this.students5DataGridView.Location = new System.Drawing.Point(-4, 1);
             this.students5DataGridView.Name = "students5DataGridView";
             this.students5DataGridView.RowHeadersWidth = 51;
             this.students5DataGridView.RowTemplate.Height = 24;
@@ -277,7 +277,7 @@
             this.Controls.Add(this.buttonPoisk);
             this.Controls.Add(this.students5DataGridView);
             this.Name = "FormKlas6";
-            this.Text = "FormKlas6";
+            this.Text = "6 Класс ";
             this.Load += new System.EventHandler(this.FormKlas6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.students5DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.students6BindingSource)).EndInit();

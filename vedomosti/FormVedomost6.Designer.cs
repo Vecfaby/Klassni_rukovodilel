@@ -129,6 +129,7 @@
             this.tableAdapterManager.roditeli8TableAdapter = null;
             this.tableAdapterManager.roditeli9TableAdapter = null;
             this.tableAdapterManager.roditeliTableAdapter = null;
+            this.tableAdapterManager.rukiTableAdapter = null;
             this.tableAdapterManager.schoolTableAdapter = null;
             this.tableAdapterManager.students5TableAdapter = null;
             this.tableAdapterManager.students6TableAdapter = null;
@@ -166,7 +167,7 @@
             this.dataGridViewTextBoxColumn11,
             this.dataGridViewTextBoxColumn12});
             this.svodnaya_vedomost6kDataGridView.DataSource = this.svodnaya_vedomost6kBindingSource;
-            this.svodnaya_vedomost6kDataGridView.Location = new System.Drawing.Point(88, 55);
+            this.svodnaya_vedomost6kDataGridView.Location = new System.Drawing.Point(90, 25);
             this.svodnaya_vedomost6kDataGridView.Name = "svodnaya_vedomost6kDataGridView";
             this.svodnaya_vedomost6kDataGridView.RowHeadersWidth = 51;
             this.svodnaya_vedomost6kDataGridView.RowTemplate.Height = 24;
@@ -279,7 +280,7 @@
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonBack);
             this.Name = "FormVedomost6";
-            this.Text = "FormVedomost6";
+            this.Text = "Сводная ведомость 6 класса";
             this.Load += new System.EventHandler(this.FormVedomost6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.klassRukDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.svodnaya_vedomost6kBindingSource)).EndInit();

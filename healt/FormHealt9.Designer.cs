@@ -36,8 +36,8 @@
             this.karta_health5BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.karta_health5TableAdapter = new Klassni_rukovodilel_.KlassRukDataSetTableAdapters.karta_health5TableAdapter();
             this.tableAdapterManager = new Klassni_rukovodilel_.KlassRukDataSetTableAdapters.TableAdapterManager();
-            this.karta_health9BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.karta_health9TableAdapter = new Klassni_rukovodilel_.KlassRukDataSetTableAdapters.karta_health9TableAdapter();
+            this.karta_health9BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.karta_health9DataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -123,6 +123,7 @@
             this.tableAdapterManager.roditeli8TableAdapter = null;
             this.tableAdapterManager.roditeli9TableAdapter = null;
             this.tableAdapterManager.roditeliTableAdapter = null;
+            this.tableAdapterManager.rukiTableAdapter = null;
             this.tableAdapterManager.schoolTableAdapter = null;
             this.tableAdapterManager.students5TableAdapter = null;
             this.tableAdapterManager.students6TableAdapter = null;
@@ -141,14 +142,14 @@
             this.tableAdapterManager.vneurochnaya_deyatelnost_TableAdapter = null;
             this.tableAdapterManager.zhurnal_TBTableAdapter = null;
             // 
+            // karta_health9TableAdapter
+            // 
+            this.karta_health9TableAdapter.ClearBeforeFill = true;
+            // 
             // karta_health9BindingSource
             // 
             this.karta_health9BindingSource.DataMember = "karta_health9";
             this.karta_health9BindingSource.DataSource = this.klassRukDataSet;
-            // 
-            // karta_health9TableAdapter
-            // 
-            this.karta_health9TableAdapter.ClearBeforeFill = true;
             // 
             // karta_health9DataGridView
             // 
@@ -201,7 +202,7 @@
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonBack);
             this.Name = "FormHealt9";
-            this.Text = "FormHealt9";
+            this.Text = "Карта здоровья 9 класс";
             this.Load += new System.EventHandler(this.FormHealt9_Load);
             ((System.ComponentModel.ISupportInitialize)(this.klassRukDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.karta_health5BindingSource)).EndInit();

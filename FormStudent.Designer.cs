@@ -58,6 +58,7 @@
             this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.klassRukDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.buttonPrint = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.klassRukDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.students5BindingSource)).BeginInit();
@@ -198,6 +199,7 @@
             this.tableAdapterManager.roditeli8TableAdapter = null;
             this.tableAdapterManager.roditeli9TableAdapter = null;
             this.tableAdapterManager.roditeliTableAdapter = null;
+            this.tableAdapterManager.rukiTableAdapter = null;
             this.tableAdapterManager.schoolTableAdapter = null;
             this.tableAdapterManager.students5TableAdapter = null;
             this.tableAdapterManager.students6TableAdapter = null;
@@ -356,11 +358,25 @@
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
+            // buttonPrint
+            // 
+            this.buttonPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonPrint.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonPrint.Location = new System.Drawing.Point(668, 412);
+            this.buttonPrint.Name = "buttonPrint";
+            this.buttonPrint.Size = new System.Drawing.Size(68, 67);
+            this.buttonPrint.TabIndex = 46;
+            this.buttonPrint.Text = "Печать";
+            this.buttonPrint.UseCompatibleTextRendering = true;
+            this.buttonPrint.UseVisualStyleBackColor = false;
+            this.buttonPrint.Click += new System.EventHandler(this.buttonPrint_Click);
+            // 
             // FormStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1389, 573);
+            this.Controls.Add(this.buttonPrint);
             this.Controls.Add(this.students5DataGridView);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.buttonPoisk);
@@ -414,5 +430,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn pasnumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn positionDataGridViewTextBoxColumn;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.Button buttonPrint;
     }
 }

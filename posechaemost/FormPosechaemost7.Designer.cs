@@ -121,6 +121,7 @@
             this.tableAdapterManager.roditeli8TableAdapter = null;
             this.tableAdapterManager.roditeli9TableAdapter = null;
             this.tableAdapterManager.roditeliTableAdapter = null;
+            this.tableAdapterManager.rukiTableAdapter = null;
             this.tableAdapterManager.schoolTableAdapter = null;
             this.tableAdapterManager.students5TableAdapter = null;
             this.tableAdapterManager.students6TableAdapter = null;
@@ -150,7 +151,7 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.posechaemost7DataGridView.DataSource = this.posechaemost7BindingSource;
-            this.posechaemost7DataGridView.Location = new System.Drawing.Point(457, 63);
+            this.posechaemost7DataGridView.Location = new System.Drawing.Point(459, 28);
             this.posechaemost7DataGridView.Name = "posechaemost7DataGridView";
             this.posechaemost7DataGridView.RowHeadersWidth = 51;
             this.posechaemost7DataGridView.RowTemplate.Height = 24;
@@ -199,7 +200,7 @@
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonBack);
             this.Name = "FormPosechaemost7";
-            this.Text = "FormPosechaemost7";
+            this.Text = "Посещаемость учеников 7 класса";
             this.Load += new System.EventHandler(this.FormPosechaemost7_Load);
             ((System.ComponentModel.ISupportInitialize)(this.klassRukDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.posechaemost7BindingSource)).EndInit();

@@ -277,7 +277,7 @@
             this.Controls.Add(this.buttonPoisk);
             this.Controls.Add(this.students5DataGridView);
             this.Name = "FormKlas5";
-            this.Text = "FormKlas5";
+            this.Text = "5 Класс ";
             this.Load += new System.EventHandler(this.FormKlas5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.students5DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.students5BindingSource)).EndInit();

@@ -50,7 +50,7 @@ namespace Klassni_rukovodilel_
             r5.Left = this.Left;
             r5.Top = this.Top;
             r5.Show();
-            this.Hide();
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -59,7 +59,7 @@ namespace Klassni_rukovodilel_
             v5.Left = this.Left;
             v5.Top = this.Top;
             v5.Show();
-            this.Hide();
+            
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -68,7 +68,7 @@ namespace Klassni_rukovodilel_
             v6.Left = this.Left;
             v6.Top = this.Top;
             v6.Show();
-            this.Hide();
+           
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -77,7 +77,7 @@ namespace Klassni_rukovodilel_
             r6.Left = this.Left;
             r6.Top = this.Top;
             r6.Show();
-            this.Hide();
+            
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -86,7 +86,7 @@ namespace Klassni_rukovodilel_
             r7.Left = this.Left;
             r7.Top = this.Top;
             r7.Show();
-            this.Hide();
+            
         }
 
         private void button17_Click(object sender, EventArgs e)
@@ -95,7 +95,7 @@ namespace Klassni_rukovodilel_
             r8.Left = this.Left;
             r8.Top = this.Top;
             r8.Show();
-            this.Hide();
+            
         }
 
         private void button23_Click(object sender, EventArgs e)
@@ -104,7 +104,7 @@ namespace Klassni_rukovodilel_
             r9.Left = this.Left;
             r9.Top = this.Top;
             r9.Show();
-            this.Hide();
+            
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -113,7 +113,7 @@ namespace Klassni_rukovodilel_
             v7.Left = this.Left;
             v7.Top = this.Top;
             v7.Show();
-            this.Hide();
+            
         }
 
         private void button18_Click(object sender, EventArgs e)
@@ -122,7 +122,7 @@ namespace Klassni_rukovodilel_
             v8.Left = this.Left;
             v8.Top = this.Top;
             v8.Show();
-            this.Hide();
+            
         }
 
         private void button24_Click(object sender, EventArgs e)
@@ -131,7 +131,7 @@ namespace Klassni_rukovodilel_
             v9.Left = this.Left;
             v9.Top = this.Top;
             v9.Show();
-            this.Hide();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -140,7 +140,7 @@ namespace Klassni_rukovodilel_
             h5.Left = this.Left;
             h5.Top = this.Top;
             h5.Show();
-            this.Hide();
+            
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -149,7 +149,7 @@ namespace Klassni_rukovodilel_
             h6.Left = this.Left;
             h6.Top = this.Top;
             h6.Show();
-            this.Hide();
+            
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -158,7 +158,7 @@ namespace Klassni_rukovodilel_
             h7.Left = this.Left;
             h7.Top = this.Top;
             h7.Show();
-            this.Hide();
+            
         }
 
         private void button19_Click(object sender, EventArgs e)
@@ -167,7 +167,7 @@ namespace Klassni_rukovodilel_
             h8.Left = this.Left;
             h8.Top = this.Top;
             h8.Show();
-            this.Hide();
+            
         }
 
         private void button20_Click(object sender, EventArgs e)
@@ -176,7 +176,7 @@ namespace Klassni_rukovodilel_
             p8.Left = this.Left;
             p8.Top = this.Top;
             p8.Show();
-            this.Hide();
+            
         }
 
         private void button25_Click(object sender, EventArgs e)
@@ -185,7 +185,7 @@ namespace Klassni_rukovodilel_
             h9.Left = this.Left;
             h9.Top = this.Top;
             h9.Show();
-            this.Hide();
+            
         }
 
         private void button26_Click(object sender, EventArgs e)
@@ -194,7 +194,7 @@ namespace Klassni_rukovodilel_
             p9.Left = this.Left;
             p9.Top = this.Top;
             p9.Show();
-            this.Hide();
+           
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -203,7 +203,7 @@ namespace Klassni_rukovodilel_
             p7.Left = this.Left;
             p7.Top = this.Top;
             p7.Show();
-            this.Hide();
+            
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -212,7 +212,7 @@ namespace Klassni_rukovodilel_
             p6.Left = this.Left;
             p6.Top = this.Top;
             p6.Show();
-            this.Hide();
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -221,7 +221,7 @@ namespace Klassni_rukovodilel_
             p5.Left = this.Left;
             p5.Top = this.Top;
             p5.Show();
-            this.Hide();
+            
         }
 
         private void buttonPoisk_Click(object sender, EventArgs e)
@@ -230,7 +230,7 @@ namespace Klassni_rukovodilel_
             s5.Left = this.Left;
             s5.Top = this.Top;
             s5.Show();
-            this.Hide();
+            
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -239,7 +239,7 @@ namespace Klassni_rukovodilel_
             s6.Left = this.Left;
             s6.Top = this.Top;
             s6.Show();
-            this.Hide();
+            
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -248,7 +248,7 @@ namespace Klassni_rukovodilel_
             s7.Left = this.Left;
             s7.Top = this.Top;
             s7.Show();
-            this.Hide();
+            
         }
 
         private void button22_Click(object sender, EventArgs e)
@@ -257,7 +257,7 @@ namespace Klassni_rukovodilel_
             s8.Left = this.Left;
             s8.Top = this.Top;
             s8.Show();
-            this.Hide();
+            
         }
 
         private void button28_Click(object sender, EventArgs e)
@@ -266,7 +266,7 @@ namespace Klassni_rukovodilel_
             s9.Left = this.Left;
             s9.Top = this.Top;
             s9.Show();
-            this.Hide();
+            
         }
 
         private void button27_Click(object sender, EventArgs e)
@@ -275,7 +275,7 @@ namespace Klassni_rukovodilel_
             me.Left = this.Left;
             me.Top = this.Top;
             me.Show();
-            this.Hide();
+            
         }
 
         private void button21_Click(object sender, EventArgs e)
@@ -284,7 +284,7 @@ namespace Klassni_rukovodilel_
             me.Left = this.Left;
             me.Top = this.Top;
             me.Show();
-            this.Hide();
+            
         }
 
         private void button15_Click(object sender, EventArgs e)
@@ -293,7 +293,7 @@ namespace Klassni_rukovodilel_
             me.Left = this.Left;
             me.Top = this.Top;
             me.Show();
-            this.Hide();
+            
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -302,7 +302,7 @@ namespace Klassni_rukovodilel_
             me.Left = this.Left;
             me.Top = this.Top;
             me.Show();
-            this.Hide();
+            
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
@@ -311,7 +311,7 @@ namespace Klassni_rukovodilel_
             me.Left = this.Left;
             me.Top = this.Top;
             me.Show();
-            this.Hide();
+            
         }
     }
 }

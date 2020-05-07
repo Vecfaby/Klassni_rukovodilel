@@ -29,26 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditInst));
             this.klassRukDataSet = new Klassni_rukovodilel_.KlassRukDataSet();
             this.instruktionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.instruktionTableAdapter = new Klassni_rukovodilel_.KlassRukDataSetTableAdapters.InstruktionTableAdapter();
             this.tableAdapterManager = new Klassni_rukovodilel_.KlassRukDataSetTableAdapters.TableAdapterManager();
-            this.instruktionBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.instruktionBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.zhurnal_TBBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.zhurnal_TBTableAdapter = new Klassni_rukovodilel_.KlassRukDataSetTableAdapters.zhurnal_TBTableAdapter();
+            this.zhurnal_TBBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.zhurnal_TBDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,8 +45,6 @@
             this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.klassRukDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.instruktionBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.instruktionBindingNavigator)).BeginInit();
-            this.instruktionBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zhurnal_TBBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zhurnal_TBDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -104,6 +88,7 @@
             this.tableAdapterManager.roditeli8TableAdapter = null;
             this.tableAdapterManager.roditeli9TableAdapter = null;
             this.tableAdapterManager.roditeliTableAdapter = null;
+            this.tableAdapterManager.rukiTableAdapter = null;
             this.tableAdapterManager.schoolTableAdapter = null;
             this.tableAdapterManager.students5TableAdapter = null;
             this.tableAdapterManager.students6TableAdapter = null;
@@ -122,139 +107,14 @@
             this.tableAdapterManager.vneurochnaya_deyatelnost_TableAdapter = null;
             this.tableAdapterManager.zhurnal_TBTableAdapter = this.zhurnal_TBTableAdapter;
             // 
-            // instruktionBindingNavigator
+            // zhurnal_TBTableAdapter
             // 
-            this.instruktionBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.instruktionBindingNavigator.BindingSource = this.instruktionBindingSource;
-            this.instruktionBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.instruktionBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.instruktionBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.instruktionBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.instruktionBindingNavigatorSaveItem});
-            this.instruktionBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.instruktionBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.instruktionBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.instruktionBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.instruktionBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.instruktionBindingNavigator.Name = "instruktionBindingNavigator";
-            this.instruktionBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.instruktionBindingNavigator.Size = new System.Drawing.Size(1389, 27);
-            this.instruktionBindingNavigator.TabIndex = 0;
-            this.instruktionBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Положение";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(55, 24);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
-            // 
-            // instruktionBindingNavigatorSaveItem
-            // 
-            this.instruktionBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.instruktionBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("instruktionBindingNavigatorSaveItem.Image")));
-            this.instruktionBindingNavigatorSaveItem.Name = "instruktionBindingNavigatorSaveItem";
-            this.instruktionBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
-            this.instruktionBindingNavigatorSaveItem.Text = "Сохранить данные";
-            this.instruktionBindingNavigatorSaveItem.Click += new System.EventHandler(this.instruktionBindingNavigatorSaveItem_Click);
+            this.zhurnal_TBTableAdapter.ClearBeforeFill = true;
             // 
             // zhurnal_TBBindingSource
             // 
             this.zhurnal_TBBindingSource.DataMember = "zhurnal_TB";
             this.zhurnal_TBBindingSource.DataSource = this.klassRukDataSet;
-            // 
-            // zhurnal_TBTableAdapter
-            // 
-            this.zhurnal_TBTableAdapter.ClearBeforeFill = true;
             // 
             // zhurnal_TBDataGridView
             // 
@@ -265,7 +125,7 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.zhurnal_TBDataGridView.DataSource = this.zhurnal_TBBindingSource;
-            this.zhurnal_TBDataGridView.Location = new System.Drawing.Point(429, 30);
+            this.zhurnal_TBDataGridView.Location = new System.Drawing.Point(431, 12);
             this.zhurnal_TBDataGridView.Name = "zhurnal_TBDataGridView";
             this.zhurnal_TBDataGridView.RowHeadersWidth = 51;
             this.zhurnal_TBDataGridView.RowTemplate.Height = 24;
@@ -354,19 +214,14 @@
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.zhurnal_TBDataGridView);
-            this.Controls.Add(this.instruktionBindingNavigator);
             this.Name = "FormEditInst";
             this.Text = "FormEditInst";
             this.Load += new System.EventHandler(this.FormEditInst_Load);
             ((System.ComponentModel.ISupportInitialize)(this.klassRukDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.instruktionBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.instruktionBindingNavigator)).EndInit();
-            this.instruktionBindingNavigator.ResumeLayout(false);
-            this.instruktionBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zhurnal_TBBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zhurnal_TBDataGridView)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -376,19 +231,6 @@
         private System.Windows.Forms.BindingSource instruktionBindingSource;
         private KlassRukDataSetTableAdapters.InstruktionTableAdapter instruktionTableAdapter;
         private KlassRukDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator instruktionBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton instruktionBindingNavigatorSaveItem;
         private KlassRukDataSetTableAdapters.zhurnal_TBTableAdapter zhurnal_TBTableAdapter;
         private System.Windows.Forms.BindingSource zhurnal_TBBindingSource;
         private System.Windows.Forms.DataGridView zhurnal_TBDataGridView;

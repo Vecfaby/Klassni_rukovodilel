@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Klassni_rukovodilel_.klass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

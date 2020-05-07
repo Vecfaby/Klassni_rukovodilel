@@ -121,6 +121,7 @@
             this.tableAdapterManager.roditeli8TableAdapter = null;
             this.tableAdapterManager.roditeli9TableAdapter = null;
             this.tableAdapterManager.roditeliTableAdapter = null;
+            this.tableAdapterManager.rukiTableAdapter = null;
             this.tableAdapterManager.schoolTableAdapter = null;
             this.tableAdapterManager.students5TableAdapter = null;
             this.tableAdapterManager.students6TableAdapter = null;
@@ -150,11 +151,11 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.posechaemost8DataGridView.DataSource = this.posechaemost8BindingSource;
-            this.posechaemost8DataGridView.Location = new System.Drawing.Point(409, 59);
+            this.posechaemost8DataGridView.Location = new System.Drawing.Point(414, 29);
             this.posechaemost8DataGridView.Name = "posechaemost8DataGridView";
             this.posechaemost8DataGridView.RowHeadersWidth = 51;
             this.posechaemost8DataGridView.RowTemplate.Height = 24;
-            this.posechaemost8DataGridView.Size = new System.Drawing.Size(497, 339);
+            this.posechaemost8DataGridView.Size = new System.Drawing.Size(497, 364);
             this.posechaemost8DataGridView.TabIndex = 61;
             // 
             // dataGridViewTextBoxColumn1
@@ -199,7 +200,7 @@
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonBack);
             this.Name = "FormPosechaemost8";
-            this.Text = "FormPosechaemost8";
+            this.Text = "Посещаемость учеников 8 класса";
             this.Load += new System.EventHandler(this.FormPosechaemost8_Load);
             ((System.ComponentModel.ISupportInitialize)(this.klassRukDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.posechaemost8BindingSource)).EndInit();

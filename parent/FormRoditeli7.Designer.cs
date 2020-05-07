@@ -127,6 +127,7 @@
             this.tableAdapterManager.roditeli8TableAdapter = null;
             this.tableAdapterManager.roditeli9TableAdapter = null;
             this.tableAdapterManager.roditeliTableAdapter = null;
+            this.tableAdapterManager.rukiTableAdapter = null;
             this.tableAdapterManager.schoolTableAdapter = null;
             this.tableAdapterManager.students5TableAdapter = null;
             this.tableAdapterManager.students6TableAdapter = null;
@@ -161,7 +162,7 @@
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewTextBoxColumn10});
             this.roditeli7DataGridView.DataSource = this.roditeli7BindingSource;
-            this.roditeli7DataGridView.Location = new System.Drawing.Point(37, 32);
+            this.roditeli7DataGridView.Location = new System.Drawing.Point(12, 30);
             this.roditeli7DataGridView.Name = "roditeli7DataGridView";
             this.roditeli7DataGridView.RowHeadersWidth = 51;
             this.roditeli7DataGridView.RowTemplate.Height = 24;
@@ -258,7 +259,7 @@
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonBack);
             this.Name = "FormRoditeli7";
-            this.Text = "FormRoditeli7";
+            this.Text = "Родители учеников 7 класса";
             this.Load += new System.EventHandler(this.FormRoditeli7_Load);
             ((System.ComponentModel.ISupportInitialize)(this.klassRukDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roditeli7BindingSource)).EndInit();
